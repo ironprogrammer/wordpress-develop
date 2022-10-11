@@ -42,12 +42,10 @@ function wp_register_custom_classname_support( $block_type ) {
  * @return array Block CSS classes and inline styles.
  */
 function wp_apply_custom_classname_support( $block_type, $block_attributes ) {
-	$has_custom_classname_support = block_has_support( $block_type, array( 'customClassName' ), true );
-	$attributes                   = array();
-	if ( $has_custom_classname_support ) {
-		$has_custom_classnames = array_key_exists( 'className', $block_attributes );
+	$attributes = array();
 
-		if ( $has_custom_classnames ) {
+	if ( block_has_support( $block_type, array( 'customClassName' ), true ) ) {
+		if ( isset( $block_attributes ) && array_key_exists( 'className', $block_attributes ) ) {
 			$attributes['class'] = $block_attributes['className'];
 		}
 	}
