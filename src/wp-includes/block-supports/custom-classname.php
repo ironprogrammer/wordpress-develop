@@ -45,7 +45,7 @@ function wp_apply_custom_classname_support( $block_type, $block_attributes ) {
 	$attributes = array();
 
 	if ( block_has_support( $block_type, array( 'customClassName' ), true ) ) {
-		if ( isset( $block_attributes ) && array_key_exists( 'className', $block_attributes ) ) {
+		if ( is_array( $block_attributes ) && array_key_exists( 'className', $block_attributes ) ) {
 			$attributes['class'] = $block_attributes['className'];
 		}
 	}
