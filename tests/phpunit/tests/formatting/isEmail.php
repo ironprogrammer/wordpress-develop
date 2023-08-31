@@ -18,6 +18,7 @@ class Tests_Formatting_IsEmail extends WP_UnitTestCase {
 			'grå@grå.org',
 			"gr\u{0061}\u{030a}blå@grå.org",
 			'..@example.com',
+			'测试5@普遍接受-测试.世界',
 		);
 		foreach ( $data as $datum ) {
 			$this->assertSame( $datum, is_email( $datum ), $datum );
