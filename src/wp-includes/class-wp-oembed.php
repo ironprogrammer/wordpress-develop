@@ -190,6 +190,12 @@ class WP_oEmbed {
 		 * | Crowdsignal  | crowdsignal.net                           | 6.2.0   |
 		 * | Anghami      | anghami.com                               | 6.3.0   |
 		 * | Bluesky      | bsky.app                                  | 6.6.0   |
+		 * | X            | x.com                                     | 6.7.0   |
+		 * | X            | x.com/timelines                           | 6.7.0   |
+		 * | X            | x.com/moments                             | 6.7.0   |
+		 * | X            | x.com/user                                | 6.7.0   |
+		 * | X            | x.com/likes                               | 6.7.0   |
+		 * | X            | x.com/lists                               | 6.7.0   |
 		 *
 		 * No longer supported providers:
 		 *
